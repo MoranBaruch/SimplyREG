@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Simply‑REG – חיפוש רגולציה</title>
+  <link href="https://fonts.googleapis.com/css?family=Assistant:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Assistant', Arial, sans-serif;
+      background: #f3f6fa;
+      margin: 0;
+      direction: rtl;
+      color: #1a2636;
+    }
+    header {
+      background: #003366;
+      padding: 18px 0 12px 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      box-shadow: 0 2px 8px #00000015;
+    }
+    .logo {
+      height: 46px;
+      width: 46px;
+      margin-left: 14px;
+      margin-right: 28px;
+      background: #fff;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .site-title {
+      color: #fff;
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-right: 8px;
+      letter-spacing: 0.03em;
+    }
+    .search-box-container {
+      display: flex;
+      justify-content: center;
+      margin: 38px 0 26px 0;
+    }
+    .search-box {
+      width: 410px;
+      max-width: 95vw;
+      border: 1.5px solid #0066cc;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      padding: 12px 18px;
+      outline: none;
+      transition: box-shadow 0.2s;
+      font-family: inherit;
+      background: #fff;
+    }
+    .search-box:focus {
+      box-shadow: 0 0 4px #00b3e677;
+    }
+    .search-btn {
+      background: linear-gradient(90deg, #00b3e6 0%, #0066cc 100%);
+      color: #fff;
+      border: none;
+      font-size: 1.15rem;
+      font-weight: 700;
+      padding: 12px 32px;
+      border-radius: 10px;
+      margin-right: 10px;
+      cursor: pointer;
+      transition: background 0.15s;
+      font-family: inherit;
+      box-shadow: 0 1px 4px #00336622;
+    }
+    .search-btn:hover {
+      background: linear-gradient(90deg, #009fcc 0%, #005bb0 100%);
+    }
+    .results-container {
+      width: 90vw;
+      max-width: 950px;
+      margin: 0 auto;
+    }
+    .category-section {
+      border-right: 6px solid #0066cc;
+      border-radius: 0 10px 10px 0;
+      background: #ffffff;
+      margin-bottom: 30px;
+      padding: 18px 20px 8px 12px;
+      box-shadow: 0 1px 8px #00336611;
+    }
+    .category-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #0066cc;
+      margin-bottom: 12px;
+      letter-spacing: 0.02em;
+    }
+    .answer-list {
+      margin: 0;
+      padding: 0 0 0 20px;
+      list-style: disc inside;
+    }
+    .no-result {
+      color: #888;
+      font-size: 1.05rem;
+      margin-top: 4px;
+    }
+    @media (max-width: 700px) {
+      .site-title { font-size: 1.25rem; }
+      .logo { height: 32px; width: 32px; margin-left: 8px; margin-right: 12px; }
+      .category-title { font-size: 1.08rem; }
+      .category-section { padding: 12px 10px 6px 6px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="site-title">Simply‑REG</span>
+    <span class="logo">
+      <img src="logo.jpg" alt="Simply‑REG Logo" style="height:36px;width:36px;">
+    </span>
+  </header>
+
+  <div class="search-box-container">
+    <input class="search-box" type="text" placeholder="מה ברצונך לשאול על רגולציה של בנק ישראל?" />
+    <button class="search-btn">חפש</button>
+  </div>
+
+  <div class="results-container">
+    <div class="category-section">
+      <div class="category-title">הפיקוח על הבנקים</div>
+      <ul class="answer-list">
+        <li>הוראת ניהול בנקאי תקין 301 מחייבת את הבנקים לפרסם מידע לציבור על עמלות עיקריות...</li>
+        <li>לפי חוזר 2021/12, יש לעדכן את הנהלים אחת לשנה לפחות.</li>
+      </ul>
+    </div>
+    <div class="category-section">
+      <div class="category-title">פיקוח על מערכות תשלומים</div>
+      <ul class="answer-list">
+        <li>מערכת זה"ב נדרשת לעמוד בתקני אבטחת מידע המפורטים בחוזר 511.</li>
+      </ul>
+    </div>
+    <div class="category-section">
+      <div class="category-title">מאגר נתוני אשראי</div>
+      <div class="no-result">לא נמצאו תשובות בקטגוריה זו.</div>
+    </div>
+  </div>
+</body>
+</html>
