@@ -6,3 +6,4 @@ python-docx
 openai
 sentence-transformers
 langchain
+python-multipart
